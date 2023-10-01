@@ -193,8 +193,9 @@
 }
 
 
-.downloadCV button{
+.downloadCV a{
     background-color: rgb(222, 222, 222);
+    color: black;
     border-radius: 50px;
     border: 2px solid lightgray;
     width: 60%;
@@ -203,9 +204,9 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-
+    text-decoration: none;
 }
-.downloadCV button span{
+.downloadCV a span{
     height: fit-content;
 }
 
