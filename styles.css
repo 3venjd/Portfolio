@@ -1,0 +1,217 @@
+* {
+    margin: 5px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5,auto);
+    gap: 5px;
+}
+
+.grid-container img{
+    height: 100px;
+    width: 100px;
+}
+
+.grid-item{
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgb(231, 233,234),5px 5px 15px rgb(231, 233,234);  /*rgb(241, 235, 235),-5px -5px 15px rgb(235, 229, 229);*/
+    background: rgb(221, 222, 223);
+}
+
+/* Experience*/
+.experience{
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 1;
+}
+
+
+.experience .imgContainer{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+#MultiportImg{
+    height: 60px;
+    width: 90px;
+}
+
+#DoblePlusImg{
+    height: 90px;
+    width: 90px;
+}
+
+#DoblePlusLabel{
+    transform: translateY(-10px);
+}
+
+#ComdataImg{
+    height: 70px;
+    width: 90px;
+}
+
+#SCILabel{
+    transform: translateY(-15px);
+}
+
+.experience .imgContainer p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*Skills*/
+.skills{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 4;
+}
+
+
+.skills img{
+    height: 60px;
+    width: 70px;
+    object-fit: cover;
+    overflow:visible;    
+    margin: 15px;
+}
+
+#NetFramework , #Angular, #Keras{
+    height: 120px;
+    width: 70px;
+}
+
+#UnitTesting {
+    height: 80px;
+    width: 70px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/*About me */
+.aboutMe{
+    display: flex;
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 1;
+}
+
+#MainImageAboutMe{
+    max-width: 100%;
+    margin: 10px;
+    height: 180px;
+    width: 160px;
+    border-radius: 100px;
+}
+
+.aboutMe p{
+    margin-left: 10px;
+    flex: 1;
+}
+
+/* SD Gallery */
+.SDGallery{
+    display: flex;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.SDGallery section{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    overflow:visible;
+}
+
+.SDGallery section img{
+    width: 0px;
+    flex-grow: 1;
+    opacity: 0.5;
+    transition: .5s ease;
+    margin: 0 -10px;
+    object-fit: cover;
+    
+}
+
+.SDGallery section img:hover{
+    cursor: crosshair;
+    width: 100px;
+    height: 160px;
+    object-fit: contain;
+    opacity: 1;
+    filter: contrast(120%);
+    border-radius: 70px;
+    z-index: 1;
+    margin-bottom: 30px;
+
+}
+
+/*Projects*/
+.projects{
+    grid-column: 2 / span 3;
+    grid-row: 4 / span 1;
+}
+
+/*Contact*/
+.contact{
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+    width: 93%;
+}
+
+
+.contact div{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact div a{
+    display: flex;
+    justify-content: center;
+}
+
+.contact div img{
+    height: 50px;
+    width: 50px;
+}
+
+#ImgLinkedin{
+    width: 90px;
+}
+
+/*Download CV*/
+.downloadCV{
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+    width:250px;
+}
+
+
+.downloadCV button{
+    background-color: rgb(222, 222, 222);
+    border-radius: 50px;
+    border: 2px solid lightgray;
+    width: 60%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+.downloadCV button span{
+    height: fit-content;
+}
+
+
+/*academicBackground*/
+.academicBackground{
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 1;
+}
