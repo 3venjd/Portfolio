@@ -31,12 +31,10 @@
     grid-row: 1 / span 1;
 }
 
-
 .experience .imgContainer{
     display: inline-block;
     margin: 0 10px;
 }
-
 
 #MultiportImg{
     height: 60px;
@@ -156,11 +154,28 @@
     grid-row: 4 / span 1;
 }
 
+.projects h3{
+    width: 100%;
+    text-align: center;
+}
+
+.projects img{
+    max-width: 100%;
+    align-content: center;
+    justify-content: center;;
+}
+
+.projects div a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
 /*Contact*/
 .contact{
     grid-column: 2 / span 2;
     grid-row: 3 / span 1;
-    width: 93%;
 }
 
 
@@ -215,4 +230,65 @@
 .academicBackground{
     grid-column: 1 / span 4;
     grid-row: 5 / span 1;
+}
+
+@media (max-width: 400px) {
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(7,auto);
+        gap: 5px;
+    }
+
+    .skills{
+        display: flex;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 4;
+    }
+
+    .experience{
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 1;
+    }
+
+    .projects{
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 1;
+    }
+
+    .SDGallery{
+        grid-column: 2 / span 2;
+        grid-row: 3 / span 1;
+    }
+    
+    .aboutMe{
+        grid-column: 2 / span 2;
+        grid-row: 4 / span 1;
+    }
+    
+    .contact{
+        grid-column: 1 / span 3;
+        grid-row: 5 / span 1;
+    }
+    
+    .academicBackground{
+        grid-column: 1 / span 3;
+        grid-row: 6 / span 1;
+    }
+    
+    .downloadCV{
+        grid-column: 1 / span 3;
+        grid-row: 7 / span 1;
+        margin: auto;
+    }
+
+/*
+
+
+
+
+    
+
+*/
 }
